@@ -17,14 +17,14 @@
 # Os dados incluem medições de temperatura. Você precisa classificar cada leitura 
 # como 'Baixa', 'Normal' ou 'Alta'. Considerando que:
 
-temperatura = 45
+# temperatura = 45
 
-if temperatura<10:
-    print("Baixa")
-elif temperatura>=10 and temperatura<25:
-    print("Normal")
-else:
-    print("Alta")
+# if temperatura<10:
+#     print("Baixa")
+# elif temperatura>=10 and temperatura<25:
+#     print("Normal")
+# else:
+#     print("Alta")
 
 ### Exercício 3: Filtragem de Logs por Severidade
 # Você está analisando logs de uma aplicação e precisa filtrar mensagens 
@@ -32,17 +32,46 @@ else:
 # como `log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}`, 
 # escreva um programa que imprima a mensagem se a severidade for 'ERROR'.
 
+# log = {'timestamp': '2021-06-23 10:00:00', 'level': 'ERROR', 'message': 'Falha na conexão'}
+
+
+# erro = log.get("level")
+
+# print(erro)
+
+# for i in log.values():
+#     if i == "ERROR":
+#         print(f"o elemento {i} está com erro")
+
+
 ### Exercício 4: Validação de Dados de Entrada
 # Antes de processar os dados de usuários em um sistema de recomendação, 
 # você precisa garantir que cada usuário tenha idade entre 18 e 65 anos e tenha 
 # fornecido um email válido. Escreva um programa que valide essas condições 
 # e imprima "Dados de usuário válidos" ou o erro específico encontrado.
 
+# idade_usuario = 30
+# email_usuario = "julio.torresoutlook.com"
+
+# if idade_usuario <= 18 and idade_usuario>=65:
+#     print("Idade invalida")
+# elif  "@" not in email_usuario or "." not in email_usuario:
+#     print("e-mail invalido")
+# else:
+#     print("Dados de usuarios valido")
+
 ### Exercício 5: Detecção de Anomalias em Dados de Transações
 # Você está trabalhando em um sistema de detecção de fraude e precisa identificar 
 # transações suspeitas. Uma transação é considerada suspeita se o valor for superior 
 # a R$ 10.000 ou se ocorrer fora do horário comercial (antes das 9h ou depois das 18h). 
 # Dada uma transação como `transacao = {'valor': 12000, 'hora': 20}`, verifique se ela é suspeita.
+
+transacao = {'valor': 12000, 'hora': 20}
+
+if transacao['valor']>10000 or (transacao["hora"]<9 and transacao["hora"]>20):
+    print("transacao suspeita")
+else:
+    print("transacao ok")
 
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
