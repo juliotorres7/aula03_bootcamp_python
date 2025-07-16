@@ -76,6 +76,22 @@
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
 
+texto = "Eu vejo um futuro brilhante, eu vejo um futuro de paz, eu vejo um futuro de esperança"
+
+texto_revisado = texto.lower()
+
+texto_split = texto_revisado.split(" ")
+
+contar_palavras = {}
+
+for palavra in texto_split:
+    if palavra in contar_palavras:
+        contar_palavras[palavra] += 1
+    else:
+        contar_palavras[palavra] = 1
+
+print(contar_palavras)
+
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
 
