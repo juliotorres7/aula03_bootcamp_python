@@ -124,23 +124,47 @@
 ### Exercício 9. Extração de Subconjuntos de Dados
 # Objetivo:** Dada uma lista de números, extrair apenas aqueles que são pares.
 
-lista_numeros = [1,5,8,9,12]
+# lista_numeros = [1,5,8,9,12]
 
-numeros_pare = []
+# numeros_pare = []
 
-for i in lista_numeros:
-    if i % 2 == 0:
-        numeros_pare.append(i)
+# for i in lista_numeros:
+#     if i % 2 == 0:
+#         numeros_pare.append(i)
 
-print(numeros_pare)
+# print(numeros_pare)
 
 ### Exercício 10. Agregação de Dados por Categoria
 # Objetivo:** Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+
+# vendas = [
+#     {"categoria": "eletrônicos", "valor": 1200},
+#     {"categoria": "livros", "valor": 200},
+#     {"categoria": "eletrônicos", "valor": 800}
+# ]
+
+# total_por_categori = {}
+
+# for i in vendas:
+#     categoria = i["categoria"]
+#     total_venda = i["valor"]
+#     if categoria in total_por_categori:
+#         total_por_categori[categoria] += total_venda
+#     else:
+#         total_por_categori[categoria] = total_venda
+
+# print(total_por_categori)
 
 ### Exercícios com WHILE
 
 ### Exercício 11. Leitura de Dados até Flag
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+
+dados = []
+entrada = ""
+
+while entrada != "sair":
+    entrada = input("entre um palavra ")
 
 ### Exercício 12. Validação de Entrada
 # Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
