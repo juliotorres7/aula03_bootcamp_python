@@ -76,24 +76,35 @@
 ### Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
 
-texto = "Eu vejo um futuro brilhante, eu vejo um futuro de paz, eu vejo um futuro de esperança"
+# texto = "Eu vejo um futuro brilhante, eu vejo um futuro de paz, eu vejo um futuro de esperança"
 
-texto_revisado = texto.lower()
+# texto_revisado = texto.lower()
 
-texto_split = texto_revisado.split(" ")
+# texto_split = texto_revisado.split(" ")
 
-contar_palavras = {}
+# contar_palavras = {}
 
-for palavra in texto_split:
-    if palavra in contar_palavras:
-        contar_palavras[palavra] += 1
-    else:
-        contar_palavras[palavra] = 1
+# for palavra in texto_split:
+#     if palavra in contar_palavras:
+#         contar_palavras[palavra] += 1
+#     else:
+#         contar_palavras[palavra] = 1
 
-print(contar_palavras)
+# print(contar_palavras)
 
 ### Exercício 7. Normalização de Dados
 # Objetivo:** Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+
+lista_numeros = [10,20,30,40,5, 15,0, 10]
+lista_normalizada = []
+
+minimo = min(lista_numeros)
+maximo = max(lista_numeros)
+
+for numero in lista_numeros:
+    lista_normalizada.append(( numero - minimo) / (maximo - minimo))
+
+print(lista_normalizada)
 
 ### Exercício 8. Filtragem de Dados Faltantes
 # Objetivo:** Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando
