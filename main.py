@@ -175,16 +175,26 @@
 
 # while entrada not in lista_de_numero:
 #     entrada = int(input("Entre um numero até acertar "))
+#  ---------------------------------------------------
+# numero = int(input("Digite um número entre 1 e 10: "))
+# while numero < 1 or numero > 10:
+#     print("Número fora do intervalo!")
+#     numero = int(input("Por favor, digite um número entre 1 e 10: "))
 
-numero = int(input("Digite um número entre 1 e 10: "))
-while numero < 1 or numero > 10:
-    print("Número fora do intervalo!")
-    numero = int(input("Por favor, digite um número entre 1 e 10: "))
-
-print("Número válido!")
+# print("Número válido!")
 
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
+
+pagina_atual = 1
+paginas_totais = 15  # Simulação, na prática, isso viria da API
+
+while pagina_atual <= paginas_totais:
+    print(f"Processando página {pagina_atual} de {paginas_totais}")
+    # Aqui iria o código para processar os dados da página
+    pagina_atual += 1
+
+print("Todas as páginas foram processadas.")
 
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
