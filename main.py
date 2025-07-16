@@ -186,18 +186,45 @@
 ### Exercício 13. Consumo de API Simulado
 # Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
 
-pagina_atual = 1
-paginas_totais = 15  # Simulação, na prática, isso viria da API
+# pagina_atual = 1
+# paginas_totais = 15  # Simulação, na prática, isso viria da API
 
-while pagina_atual <= paginas_totais:
-    print(f"Processando página {pagina_atual} de {paginas_totais}")
-    # Aqui iria o código para processar os dados da página
-    pagina_atual += 1
+# while pagina_atual <= paginas_totais:
+#     print(f"Processando página {pagina_atual} de {paginas_totais}")
+#     # Aqui iria o código para processar os dados da página
+#     pagina_atual += 1
 
-print("Todas as páginas foram processadas.")
+# print("Todas as páginas foram processadas.")
 
 ### Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
+
+# limite = 5
+# tentativa = 0
+# entrada = 0
+
+
+# while tentativa <= limite:
+#     entrada = int(input(f"Conexão falhou, voce tem mais {limite - tentativa} chance de acertar "))
+#     tentativa += 1
+# else:
+#     print("conexão encerrada")
+
+# ---------------------------------
+
+tentativas_maximas = 5
+tentativa = 1
+
+while tentativa <= tentativas_maximas:
+    print(f"Tentativa {tentativa} de {tentativas_maximas}")
+    # Simulação de uma tentativa de conexão
+    # Aqui iria o código para tentar conectar
+    if True:  # Suponha que a conexão foi bem-sucedida
+        print("Conexão bem-sucedida!")
+        break
+    tentativa += 1
+else:
+    print("Falha ao conectar após várias tentativas.")
 
 ### Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor específico que indica a parada.
